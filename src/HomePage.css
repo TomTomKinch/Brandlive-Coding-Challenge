@@ -1,4 +1,69 @@
 .Home {
+}
+
+.Top {
+  background-color: #80e1fbff; 
+}
+
+.Wow-Logo {
+  width: 700px;
+  height: 700px;
+}
+
+.Speakers {
+  background: url('./Images/01_Bluedrip_2x.png');
+}
+
+.Speakers-Title{
   text-align: center;
 }
 
+.Speaker-Profile {
+  display: flex;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Speaker-Image {
+  border-radius: 20px;
+  width: 400px;
+  height: 330px;
+  object-fit: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Video-Section {
+  background: url('./Images/02_Yellowdrip_2x.png');
+  text-align: center;
+}
+
+.Customers-Section {
+  background: url('./Images/03_Pinkdrip_2x.png');
+}
+
+.Customers {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.Customer-Logos {
+  width: 250px;
+  height: 125px;
+}
+
+.Footer {
+  background-color: #aae4eeff;
+}
+
+.Brandlive-Logo {
+  width: 200px;
+  height: 100px;
+}
+
+.BrandliveStream-Logo {
+  width: 200px;
+  height: 100px;
+}
