@@ -1,12 +1,12 @@
 # Brandlive Coding Challenge
 
-# To Run Instructions
+## To Run Instructions
 
 - Clone Repository
 > gh repo clone TomTomKinch/Brandlive-Coding-Challenge
 
 - Navigate to Directory
-> '.../Brandlive-Coding-Challenge/brandlive-coding-challenge
+> '.../Brandlive-Coding-Challenge/brandlive-coding-challenge'
 
 - Run 
 > npm start
