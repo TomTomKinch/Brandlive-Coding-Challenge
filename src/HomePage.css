@@ -139,6 +139,14 @@
   text-align: center;
   padding-left: 550px;
   padding-right: 550px;
+  padding-top: 60px;
+}
+
+.Video {
+  width: 804px; 
+  height: 452px;
+  padding-bottom: 130px;
+  padding-top: 20px;
 }
 
 .Customers-Title{
@@ -174,7 +182,7 @@
   float: left;
   width: 200px;
   height: 100px;
-  margin-left: 200px;
+  margin-left: 250px;
   vertical-align: middle;
 }
 
@@ -182,6 +190,6 @@
   float: right;
   width: 200px;
   height: 100px;
-  margin-right: 200px;
+  margin-right: 250px;
   vertical-align: middle;
 }

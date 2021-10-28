@@ -100,7 +100,6 @@ function App() {
           <span className="Clock-Text">Hours</span>
           <span className="Clock-Text">Minutes</span>
           <span className="Clock-Text">Seconds</span>
-          
         </div>
         <div className="grid-wow">
           <img src={Wow} className="Wow-Logo"/>
@@ -139,7 +138,7 @@ function App() {
           <br></br>
           <span className="Text-Speaker-Center">Good descriptive writing creates an impression in the reader's mind of an event, a place, a person, or a thing that will set a mood.</span>
           <br></br>
-          <p> PLACE HOLDER FOR VIDEO </p>
+          <iframe className="Video" src="https://www.youtube.com/embed/22jvi19akB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
       <div className="grid-customers">
