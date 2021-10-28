@@ -161,6 +161,7 @@
   display: flex;
   margin-left: 200px;
   margin-right: 200px;
+  margin-bottom: 105px;
 }
 
 .Customer-Logos {
@@ -192,4 +193,245 @@
   height: 100px;
   margin-right: 250px;
   vertical-align: middle;
+}
+
+
+@media (max-width: 1400px) {
+  .Wow-Logo {
+    width: 600px;
+    height: 600px;
+  }
+
+  .Speakers-Title{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .Speaker-Profile {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+
+  .Speaker-Image {
+    border-radius: 20px;
+    width: 300px;
+    height: 247px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Video-Title{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+  }
+
+  .Video {
+    width: 402px; 
+    height: 226px;
+    padding-bottom: 130px;
+    padding-top: 20px;
+  }
+  .Customers-Title{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .Customers {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: auto;
+  }
+  
+  .Customer-Logos {
+    width: 150px;
+    height: 75px;
+  }
+
+  .Brandlive-Logo {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-left: 50px;
+    vertical-align: middle;
+  }
+  
+  .BrandliveStream-Logo {
+    float: right;
+    width: 200px;
+    height: 100px;
+    margin-right: 50px;
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width: 1100px) {
+
+  .Clock-Colon {
+    font-family: 'Poppins';
+    font-size: 100%;
+    display:inline-block;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .Clock-Text {
+    font-family: 'Poppins';
+    font-size: 100%;
+    display:inline-block;
+    color: white;
+    padding-right: 20px;
+  }
+
+  .Wow-Logo {
+    width: 350px;
+    height: 350px;
+  }
+
+  .Speaker-Profile {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+
+  .Speaker-Image {
+    border-radius: 20px;
+    width: 200px;
+    height: 183px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .Speaker-Name {
+    font-family: 'Poppins-Bold';
+    font-size: 100%;
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .Speaker-Title {
+    font-family: 'Poppins-Bold';
+    font-size: 80%;
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .Speaker-Description {
+    font-family: 'Poppins';
+    font-size: 60%;
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .Customers {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: auto;
+  }
+
+  .Customer-Logos {
+    width: 150px;
+    height: 75px;
+  }
+
+  .Small-Bottom-Link {
+    font-family: 'Poppins-Bold';
+    font-size: 100%;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+  
+  .Brandlive-Logo {
+    width: 200px;
+    height: 100px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .BrandliveStream-Logo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .Speakers-Title{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 60%;
+  }
+
+  .Video-Title{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    font-size: 60%;
+  }
+
+  .Speaker-Profile {
+    display: table;
+    justify-content: center;
+    text-align: left;
+    margin-left: auto;
+    width: 100px;
+  }
+
+  .Speaker-Description {
+    font-family: 'Poppins';
+    font-size: 60%;
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Customers-Title{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 60%;
+  }
+
 }

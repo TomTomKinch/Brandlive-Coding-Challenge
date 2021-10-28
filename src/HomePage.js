@@ -158,10 +158,12 @@ function App() {
           </div>
       </div>
       <div className="grid-footer">
-        <img src={BrandliveLogo} className="Brandlive-Logo"/>
         <span className="Small-Bottom-Link">TERMS AND CONDITIONS</span>
         <span className="Small-Bottom-Link">PRIVACY POLICY</span>
+        <img src={BrandliveLogo} className="Brandlive-Logo"/>
         <img src={BrandliveStream} className="BrandliveStream-Logo"/>
+        <br></br>
+        <br></br>
       </div>
     </div>
   );
