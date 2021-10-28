@@ -37,13 +37,21 @@
   padding-top: 20px;
 }
 
-.Clock-Text {
+.Clock-Colon {
   font-family: 'Poppins';
   font-size: 100%;
   display:inline-block;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.Clock-Text {
+  font-family: 'Poppins';
+  font-size: 100%;
+  display:inline-block;
+  color: white;
+  padding-right: 45px;
 }
 
 .Main-Title-Center {
