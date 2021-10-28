@@ -54,7 +54,19 @@ function App() {
             <br></br>
             <span className="Text">Learn how to create immersive, visually stunning virtual experiences where your video content is the centerpiece.</span>
             <br></br>
-            <span>Days   Hours   Minutes   Seconds</span>
+            <span className="Clock">0</span>
+            <span className="Clock-Text">:</span>
+            <span className="Clock">0</span>
+            <span className="Clock-Text">:</span>
+            <span className="Clock">00</span>
+            <span className="Clock-Text">:</span>
+            <span className="Clock">00</span>
+            <br></br>
+            <span className="Clock-Text">Days</span>
+            <span className="Clock-Text">Hours</span>
+            <span className="Clock-Text">Minutes</span>
+            <span className="Clock-Text">Seconds</span>
+            
           </div>
           <div className="grid-wow">
             <img src={Wow} className="Wow-Logo"/>
@@ -86,14 +98,22 @@ function App() {
           </div>
         </div>
         <div className="grid-video">
-          <p>Our Product</p>
-          <p>FPO Title</p>
-          <p>Good descriptive writing creates an impression in the reader's mind of an event, a place, a person, or a thing that will set a mood.</p>
-          <p> PLACE HOLDER FOR VIDEO </p>
+          <div className="Video-Title">
+            <span className="Small-Title-Center">Our Product</span>
+            <br></br>
+            <span className="Main-Title-Center">FPO Title</span>
+            <br></br>
+            <span className="Text-Speaker-Center">Good descriptive writing creates an impression in the reader's mind of an event, a place, a person, or a thing that will set a mood.</span>
+            <br></br>
+            <p> PLACE HOLDER FOR VIDEO </p>
+          </div>
         </div>
         <div className="grid-customers">
-          <p>Our Happy Customers</p>
-          <p>Words That Make Us Blush</p>
+          <div className="Customers-Title">
+            <span className="Small-Title-Center">Our Happy Customers</span>
+            <br></br>
+            <span className="Main-Title-Center">Words That Make Us Blush</span>
+          </div>
           <div className="Customers">
             {customersArray.map((brand) => {
                 return(
@@ -106,8 +126,8 @@ function App() {
         </div>
         <div className="grid-footer">
           <img src={BrandliveLogo} className="Brandlive-Logo"/>
-          <p>TERMS AND CONDITIONS</p>
-          <p>PRIVACY POLICY</p>
+          <span className="Small-Bottom-Link">TERMS AND CONDITIONS</span>
+          <span className="Small-Bottom-Link">PRIVACY POLICY</span>
           <img src={BrandliveStream} className="BrandliveStream-Logo"/>
         </div>
       {/* </div> */}

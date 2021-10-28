@@ -30,6 +30,22 @@
   padding-bottom: 20px;
 }
 
+.Clock {
+  font-family: 'Poppins-Bold';
+  font-size: 350%;
+  display:inline-block;
+  padding-top: 20px;
+}
+
+.Clock-Text {
+  font-family: 'Poppins';
+  font-size: 100%;
+  display:inline-block;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .Main-Title-Center {
   font-family: 'Poppins-Bold';
   font-size: 280%;
@@ -41,6 +57,7 @@
   font-family: 'Poppins';
   font-size: 120%;
   display:inline-block;
+  padding-bottom: 20px;
 }
 
 .Text-Speaker-Center {
@@ -88,6 +105,7 @@
   display:inline-block;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 .Speaker-Title {
@@ -96,6 +114,7 @@
   display:inline-block;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 .Speaker-Description {
@@ -104,7 +123,22 @@
   display:inline-block;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 10px;
   margin-bottom: 100px;
+}
+
+.Video-Title{
+  text-align: center;
+  padding-left: 550px;
+  padding-right: 550px;
+}
+
+.Customers-Title{
+  text-align: center;
+  padding-left: 550px;
+  padding-right: 550px;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .Customers {
@@ -118,12 +152,28 @@
   height: 125px;
 }
 
+.Small-Bottom-Link {
+  font-family: 'Poppins-Bold';
+  font-size: 110%;
+  text-align: center;
+  display:inline-block;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .Brandlive-Logo {
+  float: left;
   width: 200px;
   height: 100px;
+  margin-left: 200px;
+  vertical-align: middle;
 }
 
 .BrandliveStream-Logo {
+  float: right;
   width: 200px;
   height: 100px;
+  margin-right: 200px;
+  vertical-align: middle;
 }
