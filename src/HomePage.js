@@ -47,25 +47,26 @@ function App() {
   return (
     <div className="grid-container">
       {/* <div className="Home"> */}
-        <div className="Top">
           <div className="grid-event-time">
-            <p>Starts on NOV 03, 2021 AT: 10:00 AM PDT</p>
-            <p>Create standout virtual events, minus the cost and stress.</p>
-            <p>Learn how to create immersive visually stunning virtual experiences where your video content is the centerpiece.</p>
-            <p>Days</p>
-            <p>Hours</p>
-            <p>Minutes</p>
-            <p>Seconds</p>
+            <span className="Small-Title">STARTS ON NOV 03, 2021 AT: 10:00 AM PDT</span>
+            <br></br>
+            <span className="Main-Title">Create standout virtual events, minus the cost and stress.</span>
+            <br></br>
+            <span className="Text">Learn how to create immersive, visually stunning virtual experiences where your video content is the centerpiece.</span>
+            <br></br>
+            <span>Days   Hours   Minutes   Seconds</span>
           </div>
           <div className="grid-wow">
             <img src={Wow} className="Wow-Logo"/>
           </div>
-        </div>
-        <div className="Speakers">
+        <div className="grid-speakers">
           <div className="Speakers-Title">
-            <p>Our Speakers</p>
-            <p>Meet Your Event Experts</p>
-            <p>Brandlive's line-up of creative leaders are here to help make you biggest event dreams become a reality.</p>
+            <span className="Small-Title-Center">Our Speakers</span>
+            <br></br>
+            <span className="Main-Title-Center">Meet Your Event Experts</span>
+            <br></br>
+            <span className="Text-Speaker-Center">Brandlive's line-up of creative leaders are here to help make your biggest event dreams become a reality.</span>
+            <br></br>
           </div>
           <div className="Speaker-Profile">
               {expertsArray.map((person) => {
@@ -73,24 +74,24 @@ function App() {
                   <div>
                     <img src={person.image} className="Speaker-Image"/>
                     <br></br>
-                    <span>{person.name}</span>
+                    <span className="Speaker-Name">{person.name}</span>
                     <br></br>
-                    <span>{person.title}</span>
+                    <span className="Speaker-Title">{person.title}</span>
                     <br></br>
-                    <span>{person.description}</span>
+                    <span className="Speaker-Description">{person.description}</span>
                     <br></br>
                   </div>
                 );
               })}
           </div>
         </div>
-        <div className="Video-Section">
+        <div className="grid-video">
           <p>Our Product</p>
           <p>FPO Title</p>
           <p>Good descriptive writing creates an impression in the reader's mind of an event, a place, a person, or a thing that will set a mood.</p>
           <p> PLACE HOLDER FOR VIDEO </p>
         </div>
-        <div className="Customers-Section">
+        <div className="grid-customers">
           <p>Our Happy Customers</p>
           <p>Words That Make Us Blush</p>
           <div className="Customers">
@@ -103,7 +104,7 @@ function App() {
               })}
             </div>
         </div>
-        <div className="Footer">
+        <div className="grid-footer">
           <img src={BrandliveLogo} className="Brandlive-Logo"/>
           <p>TERMS AND CONDITIONS</p>
           <p>PRIVACY POLICY</p>

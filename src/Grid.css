@@ -1,14 +1,52 @@
-.grid-container{
+.grid-container {
     display: grid;
 }
 
-.grid-event-time{
+.grid-event-time {
     grid-column: 1 / span 1;
     grid-row: 1;
+
+    background-color: #80e1fbff; 
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
 }
 
-.grid-wow{
-    grid-column: 3 / span 1;
+.grid-wow {
+    grid-column: 2 / span 1;
     grid-row: 1;
+
+    background-color: #80e1fbff;
+    padding-left: 20px;
+    padding-right: 200px;
 }
 
+.grid-speakers {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+
+    background: url('./Images/01_Bluedrip_2x.png');
+    padding-top: 85px;
+}
+
+.grid-video {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+
+    background: url('./Images/02_Yellowdrip_2x.png');
+    text-align: center;
+}
+
+.grid-customers {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+
+    background: url('./Images/03_Pinkdrip_2x.png');
+}
+
+.grid-footer {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+
+    background-color: #aae4eeff;
+}
