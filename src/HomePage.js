@@ -184,8 +184,8 @@ function App() {
           </div>
       </div>
       <div className="grid-footer">
-        <span className="Small-Bottom-Link">TERMS AND CONDITIONS</span>
-        <span className="Small-Bottom-Link">PRIVACY POLICY</span>
+        <a className="Link" href="https://www.brandlive.com/legal"><span className="Small-Bottom-Link">TERMS AND CONDITIONS</span></a>
+        <a className="Link" href="https://www.brandlive.com/legal"><span className="Small-Bottom-Link">PRIVACY POLICY</span></a>
         <a href="https://www.brandlive.com/"><img src={BrandliveLogo} className="Brandlive-Logo"/></a>
         <img src={BrandliveStream} className="BrandliveStream-Logo"/>
         <br></br>
