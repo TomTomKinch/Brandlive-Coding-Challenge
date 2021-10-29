@@ -2,20 +2,21 @@
 
 ## To Run Instructions
 
-Clone Repository
+### Clone Repository
 > gh repo clone TomTomKinch/Brandlive-Coding-Challenge
 
-Navigate to Directory
+### Navigate to Directory
 > '.../Brandlive-Coding-Challenge/brandlive-coding-challenge'
 
-Install Dependencies
+### Install Dependencies
 > npm install 
 or
 > yarn install
 
-Run 
+### Run 
 > npm start
 or
 > yarn start
 
-Open [http://localhost:3000](http://localhost:3000)
+### Open 
+[http://localhost:3000](http://localhost:3000)
