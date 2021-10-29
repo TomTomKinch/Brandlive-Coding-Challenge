@@ -26,8 +26,9 @@ function App() {
 
   useEffect(()=> { 
 
+    //-- Event Date and Time
     const eventDate = new Date("11/03/2021 10:00:00");
-    
+    // -- Countdown Timer for Event 
     const interval = setInterval(() => {
       const today = new Date();
       const currentTime = eventDate.getTime() - today.getTime();
@@ -41,6 +42,7 @@ function App() {
       setMinutes(m);
       setSeconds(s);
 
+      //Once time hits zero, set values to zero
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
         setDays(0);
         setHours(0);
@@ -54,6 +56,7 @@ function App() {
 
   }, []);
 
+  //--Modal for Speaker Information
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalData, setModalData] = useState({
       "name":"", 
@@ -62,6 +65,7 @@ function App() {
       "image": ""
   });
 
+  //Array of Speakers
   const expertsArray = [
     { "name":"Sam Kolbert-Hyle", 
       "title":"President & CEO of Brandlive", 
@@ -80,6 +84,7 @@ function App() {
     }
   ];
 
+  //Customers
   const customersArray = [
     {"image": Adidas}, 
     {"image": HerbaLife}, 
