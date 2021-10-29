@@ -8,6 +8,9 @@
 - Navigate to Directory
 > '.../Brandlive-Coding-Challenge/brandlive-coding-challenge'
 
+- Install Dependencies
+> npm install
+
 - Run 
 > npm start
 
