@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Modal from 'react-modal';
 import './HomePage.css';
 import './Grid.css';
 import Wow from './Images/Create-Virtual-Events--Walkthrough--Gabi-.png';
@@ -13,6 +14,8 @@ import GoPro from './Images/1634849109015_w628_h314.png';
 import Meredith from './Images/1634849147967_w628_h314.png';
 import BrandliveLogo from './Images/Create-Virtual-Events--Walkthrough--Gabi-(1).png';
 import BrandliveStream from './Images/Screen Shot 2021-10-26 at 12.29.07 PM.png';
+
+Modal.setAppElement('#root');
 
 function App() {
 
@@ -49,7 +52,15 @@ function App() {
 
     return () => clearInterval(interval);
 
-  }, [])
+  }, []);
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalData, setModalData] = useState({
+      "name":"", 
+      "title":"", 
+      "description":"",
+      "image": ""
+  });
 
   const expertsArray = [
     { "name":"Sam Kolbert-Hyle", 
@@ -117,7 +128,10 @@ function App() {
             {expertsArray.map((person) => {
               return(
                 <div>
-                  <img src={person.image} className="Speaker-Image"/>
+                  <img src={person.image} onClick={()=> {
+                    setModalData(person);
+                    setModalIsOpen(true);
+                  }}className="Speaker-Image"/>
                   <br></br>
                   <span className="Speaker-Name">{person.name}</span>
                   <br></br>
@@ -129,6 +143,18 @@ function App() {
               );
             })}
         </div>
+        <Modal className="Speaker-Modal" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+          <div>
+            <button className="Modal-Button" onClick={() => setModalIsOpen(false)}>X</button>
+          </div>
+          <img src={modalData.image} className="Modal-Image"/>
+          <span className="Speaker-Name">{modalData.name}</span>
+          <br></br>
+          <span className="Speaker-Title">{modalData.title}</span>
+          <br></br>
+          <span className="Modal-Speaker-Description">{modalData.description}</span>
+          <br></br>
+        </Modal>
       </div>
       <div className="grid-video">
         <div className="Video-Title">
@@ -138,7 +164,7 @@ function App() {
           <br></br>
           <span className="Text-Speaker-Center">Good descriptive writing creates an impression in the reader's mind of an event, a place, a person, or a thing that will set a mood.</span>
           <br></br>
-          <iframe className="Video" src="https://www.youtube.com/embed/22jvi19akB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="Video" src="https://www.youtube.com/embed/22jvi19akB8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
       <div className="grid-customers">
